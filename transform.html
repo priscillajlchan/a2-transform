@@ -6,25 +6,41 @@
 	<style> 
 
 
-	div {
+	#pandee {
 		width:250px;
 		height:250px;
 		background:url(images/webpandee.png) no-repeat;
-		transition:width 2s, height 3s;
-		-webkit-transition:width 2s, height 3s, -webkit-transform 2s; /* Safari */
+		position: absolute;
+		
+		transition:width 2s, height 2s;
+		-webkit-transition:width 2s, height 2s, -webkit-transform 2s; /* Safari */
 	}
 
-	div:hover {
-		width:300px;
-		height:300px;
+	#pandee:hover {
+		width:400px;
+		height:500px;
 		transform:rotate(30deg);
 		-webkit-transform:rotate(30deg); /* Safari */
 
-
 	}
+
+#bamboo { 
+	background: url(images/bambooforest.jpg) no-repeat;
+	height: 1000px;
+	margin: 0px; 
+
+
+   
+}
+
+
 	</style>
 
-<div></div>
+	<body>
+<div id="bamboo">
+<div id="pandee"></div>
+
+</div>
 
 
 </body>
